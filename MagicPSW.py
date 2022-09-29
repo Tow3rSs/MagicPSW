@@ -187,7 +187,7 @@ numbered = []
 def numerator(userwords):
     print("[*] Appending Numbers...")
     for word in userwords:
-        for i in ["{0:02}".format(i) for i in range(0, 101)]:  # {0:03} stabilisce il numero di cifre del numero aggiunto es. test001
+        for i in ["{0:02}".format(i) for i in range(0, 101)]:
             neword = word + str(i)
             numbered.append(neword)
 
@@ -349,8 +349,6 @@ numerator(multiplexed)
 specialchar(multiplexed, numbered)
 extranumerator(chars, extrappended)
 toutput = set(chars + numchars + numbered + uppercased + lowercased + titled + list(multiplexed))
-
-#create a function?
 
 print("[*] Removing extra words... ")
 reslist = []
