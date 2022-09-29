@@ -1,7 +1,3 @@
-# da fare: 
-#          aggiungere exception per primi giorni del mese di nascita
-#          aggiungere una data supplementare
-
 print("""
 ---------------------------------------------------------
     __  __             _      ____  ______        __
@@ -28,8 +24,6 @@ if userinput != " ":
     year = input("Victim Birth Year (YYYY) -> ")
     
     yeared = str(year)[-2:]
-    #dayrid = str(day)[-1:]
-    #monthrid = str(month)[-1:]
 
     while True:
         word = input("Any Word -> ")
